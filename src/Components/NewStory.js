@@ -100,7 +100,7 @@ export default class NewStory extends Component {
 
       return (
         <div className="richtext-editor">
-          <input type="text" className="input-title" value={title} onChange={(e) => this.setState({title: e.target.value})} placeholder="Title" />
+          <input type="text" className="input-title" value={title} onChange={(e) => this.setState({title: e.target.value})} placeholder="タイトル" />
           <BlockStyleControls
             editorState={editorState}
             onToggle={this.toggleBlockType}
@@ -116,12 +116,12 @@ export default class NewStory extends Component {
               handleKeyCommand={this.handleKeyCommand}
               keyBindingFn={this.mapKeyToEditorCommand}
               onChange={this.onChange}
-              placeholder="Tell your story..."
+              placeholder="ストーリーを話してください。。。"
               ref="editor"
               spellCheck={true}
             />
           </div>
-          {done ==='done' ? <button onClick={this.handleSubmit} className="btn btn-submit">Submit</button> : (done==='submitted' ? <span className="msg-success">Your story has been submitted</span> : <span className="msg-error">You havent finished writing your story</span>)}
+          {done ==='done' ? <button onClick={this.handleSubmit} className="btn btn-submit">サミット</button> : (done==='submitted' ? <span className="msg-success">サミットした</span> : <span className="msg-error">ストーリーを終わらなければならない</span>)}
         </div>
       );
 
