@@ -5,6 +5,7 @@ import { leveningStr } from "../helper";
 
 export default ({ post, handleBookmark, handleRemoveBookmark }) => {
   const { id, title, body, bookmark } = post;
+  
   return (
     <div className="post">
       <h3>
@@ -13,25 +14,19 @@ export default ({ post, handleBookmark, handleRemoveBookmark }) => {
       <p>{renderHTML(leveningStr(body, 250))}</p>
       <ul>
         <li>
-          <Link to={`/post/${id}`} className="btn btn-more">
-            もっと読み
-          </Link>
+          <Link to={`/post/${id}`} className="btn btn-more">もっと読み</Link>
         </li>
         <li>
           {bookmark ? (
             <button
               className="btn btn-remove-bookmarks"
               onClick={() => handleRemoveBookmark(post)}
-            >
-              ブックマークから削除
-            </button>
+            >ブックマークから削除</button>
           ) : (
             <button
               className="btn btn-bookmarks"
               onClick={() => handleBookmark(post)}
-            >
-              ブックマークに追加
-            </button>
+            >ブックマークに追加</button>
           )}
         </li>
       </ul>
