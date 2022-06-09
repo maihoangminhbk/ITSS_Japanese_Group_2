@@ -10,8 +10,8 @@ export default ({match: {params: {id}}, history, posts, handleBookmark, handleRe
       <h1 className="header">{post.title}</h1>
       {renderHTML(post.body)}
       <ul className="post-foot">
-        <li>{post.bookmark ? <button className="btn btn-remove-bookmarks" onClick={() => handleRemoveBookmark(post)} >削除</button> : <button className="btn btn-bookmarks" onClick={() => handleBookmark(post)} >Add to Bookmark</button>}</li>
-        <li><button className="btn btn-remove" onClick={()=>handleRemove(post, history)}>Remove</button></li>
+        <li>{post.bookmark ? <button className="btn btn-remove-bookmarks" onClick={() => handleRemoveBookmark(post)} >ブックマークから削除</button> : <button className="btn btn-bookmarks" onClick={() => handleBookmark(post)} >ブックマークに追加</button>}</li>
+        <li><button className="btn btn-remove" onClick={()=>handleRemove(post, history)}>削除</button></li>
       </ul>
     </div>
   )
