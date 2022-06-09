@@ -10,7 +10,7 @@ export default ({posts, bookmarks, handleBookmark, handleRemoveBookmark}) => {
         <Posts posts={posts} handleBookmark={handleBookmark} handleRemoveBookmark={handleRemoveBookmark} />
       </div>
       <div className="bookmarks-sidebar">
-        <h1>Bookmarks</h1>
+        <h1>ブックマーク</h1>
         <Bookmarks bookmarks={bookmarks} />
       </div>
     </div>

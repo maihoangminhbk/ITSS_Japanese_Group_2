@@ -10,8 +10,8 @@ export default ({post, handleBookmark, handleRemoveBookmark}) => {
       <h3><Link to={`/post/${id}`}>{title}</Link></h3>
       <p>{renderHTML(leveningStr(body, 250))}</p>
       <ul>
-        <li><Link to={`/post/${id}`} className="btn btn-more">Read More</Link></li>
-        <li>{bookmark ? <button className="btn btn-remove-bookmarks" onClick={() => handleRemoveBookmark(post)} >Remove from Bookmark</button> : <button className="btn btn-bookmarks" onClick={() => handleBookmark(post)} >Add to Bookmark</button>}</li>
+        <li><Link to={`/post/${id}`} className="btn btn-more">もっと読み</Link></li>
+        <li>{bookmark ? <button className="btn btn-remove-bookmarks" onClick={() => handleRemoveBookmark(post)} >ブックマークから削除</button> : <button className="btn btn-bookmarks" onClick={() => handleBookmark(post)} >Add to Bookmark</button>}</li>
       </ul>
     </div>
   )

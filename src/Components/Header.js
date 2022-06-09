@@ -8,9 +8,9 @@ export default ({match: {url}}) => {
     <header>
       <div className="navbar">
         <ul>
-          <li>{url === '/' ? <Link to="/new" className="btn btn-new">New Story</Link> : <Link to="/" className="btn btn-new">Home</Link>}</li>
+          <li>{url === '/' ? <Link to="/new" className="btn btn-new">新しいポスト</Link> : <Link to="/" className="btn btn-new">ホーム</Link>}</li>
           <li><img alt="react-logo" src={logo} /></li>
-          <li><Link to="/bookmark" className="btn btn-bookmarks">Bookmarks</Link></li>
+          <li><Link to="/bookmark" className="btn btn-bookmarks">ブックマーク</Link></li>
         </ul>
       </div>
     </header>
