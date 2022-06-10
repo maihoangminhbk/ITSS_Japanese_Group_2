@@ -190,6 +190,7 @@ a.btn {
 }
 
 .btn-more {
+  background-color: rgb(255, 219, 164);
   margin-right: 15px;
 }
 
@@ -240,7 +241,7 @@ a.btn {
   font-size: 22px;
 }
 
-.single-post h6, , .DraftEditor-editorContainer h6 {
+.single-post h6, .DraftEditor-editorContainer h6 {
   font-size: 18px;
 }
 
@@ -343,4 +344,8 @@ footer {
   text-decoration: none;
   padding: 2px 5px;
   border-radius: 4px;
+}
+
+.bookmark-title {
+  text-align: center;
 }
